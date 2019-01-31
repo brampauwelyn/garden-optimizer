@@ -1,0 +1,1 @@
+VEGETABLES = ['aubergine','brocolli','brussels sprouts','cabbage','carrot','cauliflower','fennel','lettuce']

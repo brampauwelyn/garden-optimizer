@@ -1,6 +1,7 @@
 <template>
   <div class="tag">
    <span>{{ text }}</span>
+   <button @click="removeTag" class="tag__remove"></button>
   </div>
 </template>
 
@@ -9,6 +10,11 @@ export default {
   name: 'Tag',
   props: {
     text: String
+  },
+  methods: {
+    removeTag: function(){
+      this.$emit('removeTag');
+    }
   }
 }
 </script>
@@ -21,5 +27,52 @@ export default {
   border-radius: 4px;
   display: inline-block;
   margin: 10px;
+}
+
+.tag__remove{
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-color: rgba(10,10,10,.2);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  pointer-events: auto;
+  display: inline-block;
+  height: 20px;
+  max-height: 20px;
+  max-width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: 0;
+  position: relative;
+  vertical-align: top;
+  width: 20px;
+  margin-left: 10px;
+}
+
+.tag__remove:hover{
+  background-color: rgba(10,10,10,.3);
+}
+
+.tag__remove::before,
+.tag__remove::after{
+    height: 2px;
+  width: 50%;
+  background-color: #fff;
+  content: "";
+  display: block;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+}
+
+.tag__remove::before{
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.tag__remove::after{
+   -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-45deg);
 }
 </style>

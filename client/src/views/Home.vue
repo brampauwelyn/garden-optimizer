@@ -1,12 +1,12 @@
 <template>
   <div class="home">
     <h1>Garden Optimizer</h1>
-    <Tag :key="key" v-for="(veggie,key) in selectedVeggies" :text="veggie" />
+    <Tag :key="key" v-for="(veggie,key) in selectedVeggies" :text="veggie" @removeTag="removeVeggie(veggie)"/>
     <div class="suggest-container">
       <input @input="searchSuggestions" v-model="searchQuery" class="search-field" type="text">
       <ul class="suggest-box" v-show="focusActive">
-        <li :key="key" v-for="(result ,key) in searchResults" @click="addVeggie(result)">
-         {{ result }}
+        <li :key="key" v-for="(result ,key) in searchResults" @click="addVeggie(result.name)">
+         {{ result.name }}
         </li>
       </ul>
     </div>
@@ -38,18 +38,26 @@ export default {
       const url = 'http://localhost:5000/vegetables';
       axios.get(url)
       .then( (res) => {
-        console.log(res.data.vegetables);
-        this.suggestions = res.data.vegetables;
+       this.suggestions = res.data.vegetables;
       })
     },
     searchSuggestions:  function(){
-      this.searchResults = [];
-      this.searchResults = this.suggestions.filter(suggestion => suggestion.toLowerCase().indexOf(this.searchQuery.toLowerCase())> -1);
-      this.focusActive = (this.searchResults.length) ? true : false;
+      if(this.searchQuery.length > 0){
+        this.searchResults = [];
+        this.searchResults = this.suggestions.filter(suggestion => suggestion.name.toLowerCase().indexOf(this.searchQuery.toLowerCase())> -1);
+        this.focusActive =  (this.searchResults.length > 0) ? true : false;
+      }else{
+        this.focusActive = false;
+      }
     },
     addVeggie: function(veggie){
       this.selectedVeggies.push(veggie);
       this.focusActive = false;
+    },
+    removeVeggie: function(veggie){
+      if(this.selectedVeggies.indexOf(veggie) > -1){
+        this.selectedVeggies.splice(veggie, 1);
+      }
     }
   },
   created(){

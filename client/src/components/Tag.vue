@@ -27,6 +27,7 @@ export default {
   border-radius: 4px;
   display: inline-block;
   margin: 10px;
+  animation: fadein 1s;
 }
 
 .tag__remove{
@@ -75,4 +76,11 @@ export default {
    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
   transform: translateX(-50%) translateY(-50%) rotate(-45deg);
 }
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 </style>

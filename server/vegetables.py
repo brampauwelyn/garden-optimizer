@@ -41,7 +41,22 @@ VEGETABLES = [
   },
   {
     "name":"borage",
-    "companion": ["broccoli","brussels sprouts","cabbages","cauliflower","peas","squash",""],
+    "companion": ["broccoli","brussels sprouts","cabbages","cauliflower","peas","squash","strawberry","tomato"],
     "antagonistic": []
+  },
+  {
+    "name":"cabbages",
+    "companion": ["beans","broad beans","bush beans","climbing beans","beets","borage","chamomille","celery","coriander","dill","cucumber","marigold","lettuce","marjoram","nasturtium","onions","peas","pennyroyal","potatoes","rosemary","sage"],
+    "antagonistic": ["garlic","rue","strawberry","tomato"],
+  },
+  {
+    "name":"carrots",
+    "companion": ["beans","chives","coriander","dill","cucumber","marigold","lettuce","marjoram","onions","peas","radish","rosemary","sage","tomato"],
+    "antagonistic": [],
+  },
+  {
+    "name":"celery",
+    "companion": ["bush beans","cabbages","cauliflower","marjoram","peas","tomato"],
+    "antagonistic": ["onions","potatoes"],
   }
 ]

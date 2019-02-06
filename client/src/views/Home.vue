@@ -1,15 +1,20 @@
 <template>
   <div class="home">
     <h1>Garden Optimizer</h1>
-    <Tag :key="key" v-for="(veggie,key) in selectedVeggies" :text="veggie" @removeTag="removeVeggie(veggie)"/>
+     <div>
+      <Tag :key="key" v-for="(veggie,key) in selectedVeggies" :text="veggie" @removeTag="removeVeggie(veggie)"/>
+        <Button v-if="selectedVeggies.length > 1">Start the magic</Button>
+
+    </div>
     <div class="suggest-container">
-      <input @input="searchSuggestions" v-model="searchQuery" class="search-field" type="text">
+      <input @input="searchSuggestions" v-model="searchQuery" placeholder="Enter your vegetables" class="search-field" type="text">
       <ul class="suggest-box" v-show="focusActive">
         <li :key="key" v-for="(result ,key) in searchResults" @click="addVeggie(result.name)">
          {{ result.name }}
         </li>
       </ul>
     </div>
+
     <img src="@/assets/Vegetables-Garden.jpg" style="display:block;margin:0 auto;" width="800" alt="">
   </div>
 </template>
@@ -18,11 +23,13 @@
 // @ is an alias to /src
 import axios from 'axios';
 import Tag from '@/components/Tag.vue';
+import Button from '@/components/Button.vue';
 
 export default {
   name: 'home',
   components: {
-    Tag
+    Tag,
+    Button
   },
   data: function(){
     return{
@@ -78,8 +85,6 @@ export default {
 
 .search-field:focus{
   border:1px solid #5AA8FB;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
 }
 
 .suggest-container{

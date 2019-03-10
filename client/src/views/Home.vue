@@ -11,6 +11,7 @@
       <ul class="suggest-box" v-show="focusActive">
         <li :key="key" v-for="(result ,key) in searchResults" @click="addVeggie(result.name)">
          {{ result.name }}
+          <router-link :to="{ name: 'plant', params: { id: result.name }}">detail</router-link>
         </li>
       </ul>
     </div>

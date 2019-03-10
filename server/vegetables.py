@@ -47,16 +47,46 @@ VEGETABLES = [
   {
     "name":"cabbages",
     "companion": ["beans","broad beans","bush beans","climbing beans","beets","borage","chamomille","celery","coriander","dill","cucumber","marigold","lettuce","marjoram","nasturtium","onions","peas","pennyroyal","potatoes","rosemary","sage"],
-    "antagonistic": ["garlic","rue","strawberry","tomato"],
+    "antagonistic": ["garlic","rue","strawberry","tomato"]
   },
   {
     "name":"carrots",
     "companion": ["beans","chives","coriander","dill","cucumber","marigold","lettuce","marjoram","onions","peas","radish","rosemary","sage","tomato"],
-    "antagonistic": [],
+    "antagonistic": []
   },
   {
     "name":"celery",
     "companion": ["bush beans","cabbages","cauliflower","marjoram","peas","tomato"],
-    "antagonistic": ["onions","potatoes"],
-  }
+    "antagonistic": ["potatoes"]
+  },
+  {
+    "name":"cherry",
+    "companion": ["chives","marigold","lettuce","nasturtium","silverbeet","spinach"],
+    "antagonistic": ["potatoes"]
+  },
+  {
+    "name":"chervil",
+    "companion": ["coriandre","dill","garlic","lettuce","parsley","radish","yarrow"],
+    "antagonistic": []
+  },
+  {
+    "name":"chives",
+    "companion": ["apple","aspargus","carrots","cherry","fruit trees","marjoram","mulberry","roses","strawberry","tomato"],
+    "antagonistic": ["beans","broad beans","bush beans","climbing beans","peas"]
+  },
+  {
+   "name":"coriander",
+   "companion": ["broccoli", "brussels sprouts", "cabbages","carrots", "cauliflower","chervil"],
+   "antagonistic": ["fennel",]
+  },
+  {
+   "name":  "corn",
+   "companion": ["beans","broad beans","bush beans","climbing beans","cucumber","marjoram","peas","potatoes","pumpkin"],
+   "antagonistic": []
+  },
+  {
+   "name":  "cucumber",
+   "companion": ["basil","beans","bush beans","borage","broccoli","brussels sprouts","cabbages","carrots","cauliflower","corn","lettuce","marjoram","nasturtium","peas","radish","sunflower"],
+   "antagonistic": ["potatoes","sage"]
+  },
 ]

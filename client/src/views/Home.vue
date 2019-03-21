@@ -4,10 +4,9 @@
      <div>
       <Tag :key="key" v-for="(veggie,key) in selectedVeggies" :text="veggie" @removeTag="removeVeggie(veggie)"/>
         <Button v-if="selectedVeggies.length > 1">Start the magic</Button>
-
     </div>
     <div class="suggest-container">
-      <input @input="searchSuggestions" v-model="searchQuery" placeholder="Enter your vegetables" class="search-field" type="text">
+      <input @input="searchSuggestions" v-model="searchQuery" placeholder="Which plants do you want to grow?" class="search-field" type="text">
       <ul class="suggest-box" v-show="focusActive">
         <li :key="key" v-for="(result ,key) in searchResults" @click="addVeggie(result.name)">
          {{ result.name }}

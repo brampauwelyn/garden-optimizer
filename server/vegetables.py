@@ -2,7 +2,7 @@ VEGETABLES = [
   {
     "name":"apricot",
     "companion": ["basil","marigold","garlic","nasturtium","spinach","stinging nettle", "sunflower","yarrow"],
-    "antagonistic": ["tomato"]
+    "antagonistic": ["tomato"]  
   },
   {
     "name":"aspargus",
@@ -89,4 +89,59 @@ VEGETABLES = [
    "companion": ["basil","beans","bush beans","borage","broccoli","brussels sprouts","cabbages","carrots","cauliflower","corn","lettuce","marjoram","nasturtium","peas","radish","sunflower"],
    "antagonistic": ["potatoes","sage"]
   },
+  {
+    "name": "dill",
+    "companion": ["beets","brocolli","brussels sprouts","cabbages","carrots","cauliflower","celery","chervil","coriander","cucumber","fennel","tomato"],
+    "antagonistic": []
+  },
+  {
+    "name": "eggplant",
+    "companion": ["beans","marjoram","potatoes"],
+    "antagonistic": []
+  },
+  {
+    "name": "fennel",
+    "companion": ["basil"],
+    "antagonistic": ["beans","broad beans","tomato"]
+  },
+  {
+    "name": "marigold",
+    "companion": ["apple","apricot","beans","cabbages","cauliflower","cherry","fruit trees","lettuce","mulberry","roses","strawberry","tomato"],
+    "antagonistic": []
+  },
+  {
+    "name": "fruit trees",
+    "companion": ["chamomile", "chives", "marigold", "garlic", "mulberry", "silverbeet", "spinach", "stinging nettle","yarrow"],
+    "antagonistic": []
+  },
+  {
+    "name": "garlic",
+    "companion": ["apple", "apricot", "cherry", "fruit trees", "mulberry", "rosemary", "roses"],
+    "antagonistic": ["beans", "broad beans", "bush beans", "climbing beans", "cabbages", "peas", "strawberry"]
+  },
+  {
+    "name": "gooseberry",
+    "companion": ["tomato"],
+    "antagonistic": []
+  },
+  {
+    "name": "grape vine",
+    "companion": ["mulberry", "tomato"],
+    "antagonistic": []
+  },
+  {
+    "name": "grass",
+    "companion": ["mulberry", "yarrow"],
+    "antagonistic": ["apple", "apricot", "cherry", "fruit trees", "sage"]
+  },
+  {
+    "name": "grass",
+    "companion": ["mulberry", "yarrow"],
+    "antagonistic": ["apple", "apricot", "cherry", "fruit trees", "sage"]
+  },
+  {
+    "name": "horseradish",
+    "companion": ["apple", "apricot", "cherry"],
+    "antagonistic": []
+  }
 ]

@@ -27,13 +27,17 @@ export default {
       plantImage: ""
     }
   },
+  watch: {
+    // call again the methods if the route changes
+    '$route': ['getPlant', 'getPlantInfo']
+  },
   methods: {
     getPlant: function(){
       const url = 'http://localhost:5000/vegetables';
       axios.get(url)
       .then((res) => {
         this.allPlants = res.data.vegetables;
-        this.selectedPlant = this.allPlants.filter(plant => plant.name === this.name)[0];
+        this.selectedPlant = this.allPlants.filter(plant => plant.name === this.$route.params.id)[0];
       });
     },
     getPlantInfo: function(){

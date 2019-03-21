@@ -3,7 +3,7 @@
     <caption>{{ title }}</caption>
     <tbody>
       <tr :key="key" v-for="(item,key) in list">
-        <td>{{ item }}</td>
+        <td><router-link :to="item">{{ item }}</router-link></td>
       </tr>
     </tbody>
   </table>

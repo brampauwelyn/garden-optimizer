@@ -21,9 +21,9 @@
 
 <script>
 // @ is an alias to /src
-import axios from 'axios';
 import Tag from '@/components/Tag.vue';
 import Button from '@/components/Button.vue';
+import gardenOptimizerApi from '@/services/api/gardenOptimizerApi';
 
 export default {
   name: 'home',
@@ -42,10 +42,9 @@ export default {
   },
   methods: {
     getAllVeggies: function(){
-      const url = 'http://localhost:5000/vegetables';
-      axios.get(url)
-      .then( (res) => {
-       this.suggestions = res.data.vegetables;
+      gardenOptimizerApi.getPlants()
+      .then(plants => {
+        this.suggestions = plants.data.vegetables;
       })
     },
     searchSuggestions:  function(){

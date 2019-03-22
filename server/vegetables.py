@@ -2,7 +2,8 @@ VEGETABLES = [
   {
     "name":"apricot",
     "companion": ["basil","marigold","garlic","nasturtium","spinach","stinging nettle", "sunflower","yarrow"],
-    "antagonistic": ["tomato"]  
+    "antagonistic": ["tomato"],
+    "trefle_id": "167632" 
   },
   {
     "name":"aspargus",

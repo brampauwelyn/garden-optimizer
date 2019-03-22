@@ -11,14 +11,6 @@ app.config.from_object(__name__)
 
 CORS(app)
 
-
-def filter_plants(plant, plant_name):
-    if plant["name"] == plant_name:
-        return True
-    else:
-        return False
-
-
 # sanity route check
 @app.route('/ping', methods=['GET'])
 def ping_pong():
@@ -31,6 +23,14 @@ def vegetables():
     return jsonify({
         'vegetables': VEGETABLES
     })
+
+
+@app.route('/getplantinfo', methods=['GET'])
+def get_plant_info():
+    plant_id = request.args.get('plantid')
+    url_detail = "https://trefle.io/api/plants/{}?token={}".format(plant_id, trefle_apikey)
+    request_detail = requests.get(url_detail)
+    return jsonify(json.loads(request_detail.content))
 
 
 @app.route('/getplant', methods=['GET'])

@@ -6,19 +6,22 @@ VEGETABLES = [
     "trefle_id": "167632" 
   },
   {
-    "name":"aspargus",
+    "name":"asparagus",
     "companion": ["basil","marjoram","parsley","tomato"],
-    "antagonistic": []
+    "antagonistic": [],
+    "trefle_id": "108456"
   },
   {
     "name":"basil",
-    "companion": ["apricot","aspargus","chives","cucumber","fennel","tomato"],
-    "antagonistic": ["rue","silverbeet"]
+    "companion": ["apricot","asparagus","chives","cucumber","fennel","tomato"],
+    "antagonistic": ["rue","silverbeet"],
+    "trefle_id": "159556"
   },
   {
     "name":"beans",
     "companion": ["broccoli","brussels sprouts","cabbages","carrots","cauliflower","corn","cucumber","marigold","grape vine","lettuce","marjoram","parsley","peas","potatoes","rosemary","sage","savory"],
-    "antagonistic": ["chives","fennel","garlic","onions"]
+    "antagonistic": ["chives","fennel","garlic","onions"],
+    "trefle_id": "165379"
   },
   {
     "name":"broad beans",
@@ -28,7 +31,8 @@ VEGETABLES = [
   {
     "name":"bush beans",
     "companion": ["beets","broccoli","brussels sprouts","cabbages","cauliflower","celery","corn","cucumber","marjoram","potatoes","straweberry","sunflower"],
-    "antagonistic": ["chives","garlic","onions"]
+    "antagonistic": ["chives","garlic","onions"],
+    "trefle_id": "153863"
   },
   {
     "name":"climbing beans",
@@ -48,7 +52,8 @@ VEGETABLES = [
   {
     "name":"cabbages",
     "companion": ["beans","broad beans","bush beans","climbing beans","beets","borage","chamomille","celery","coriander","dill","cucumber","marigold","lettuce","marjoram","nasturtium","onions","peas","pennyroyal","potatoes","rosemary","sage"],
-    "antagonistic": ["garlic","rue","strawberry","tomato"]
+    "antagonistic": ["garlic","rue","strawberry","tomato"],
+    "trefle_id": "112492"
   },
   {
     "name":"carrots",
@@ -72,7 +77,7 @@ VEGETABLES = [
   },
   {
     "name":"chives",
-    "companion": ["apple","aspargus","carrots","cherry","fruit trees","marjoram","mulberry","roses","strawberry","tomato"],
+    "companion": ["apple","asparagus","carrots","cherry","fruit trees","marjoram","mulberry","roses","strawberry","tomato"],
     "antagonistic": ["beans","broad beans","bush beans","climbing beans","peas"]
   },
   {

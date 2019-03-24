@@ -47,7 +47,8 @@ VEGETABLES = [
   {
     "name":"borage",
     "companion": ["broccoli","brussels sprouts","cabbages","cauliflower","peas","squash","strawberry","tomato"],
-    "antagonistic": []
+    "antagonistic": [],
+    "trefle_id": "111969"
   },
   {
     "name":"cabbages",
@@ -147,7 +148,157 @@ VEGETABLES = [
   },
   {
     "name": "horseradish",
-    "companion": ["apple", "apricot", "cherry"],
+    "companion": ["apple", "apricot", "cherry", "potatoes", "roses", "stinging nettle"],
+    "antagonistic": []
+  },
+  {
+    "name": "horseradish",
+    "companion": ["apple", "apricot", "cherry", "potatoes", "roses", "stinging nettle"],
+    "antagonistic": []
+  },
+  {
+    "name": "lavender",
+    "companion": ["cabbages", "garlic", "marjoram", "roses", "silverbeet", "strawberry"],
+    "antagonistic": ["fennel"]
+  },
+  {
+    "name": "leeks",
+    "companion": ["carrots", "celery", "marjoram", "onions", ],
+    "antagonistic": []
+  },
+  {
+    "name": "lemon balm",
+    "companion": ["apple", "apricot", "cherry", "fruit trees", "mulberry", "roses"],
+    "antagonistic": []
+  },
+  {
+    "name": "lettuce",
+    "companion": ["beans", "broad beans", "climbing beans", "beets", "cabbages", "carrots", "chervil", "cucumber", "marigold", "marjoram", "onions", "peas", "radish", "strawberry"],
+    "antagonistic": ["parsley"]
+  },
+  {
+    "name": "marjoram",
+    "companion": ["asparagus", "beans", "broad beans", "bush beans", "climbing beans", "beets", "broccoli", "brussels sprouts", "cabbages", "carrots", "cauliflower", "celery", "chivers", "corn", "cucumber", "lettuce", "onions", "peas", "potatoes", "pumpkin", "radish", "silverbeet", "spinach",  "squash", "tomato", "zucchini"],
+    "antagonistic": []
+  },
+  {
+    "name": "mints",
+    "companion": ["cabbages", "tomato"],
+    "antagonistic": ["chamomille", "parsley"]
+  },
+  {
+    "name": "mustard",
+    "companion": ["apple", "apricot", "cherry", "fruit trees", "grape vine", "mulberry"],
+    "antagonistic": []
+  },
+  {
+    "name": "nasturtium",
+    "companion": ["apple", "apricot", "broccoli", "cabbages", "cherry", "cucumber", "fruit trees", "mulberry", "potatoes", "radish", "roses", "squash", "tomato", "zucchini"],
+    "antagonistic": []
+  },
+  {
+    "name": "onions",
+    "companion": ["beets", "cabbages", "carrots", "lettuce", "marjoram", "parsley", "rue", "savory", "silverbeet", "strawberry", "tomato"],
+    "antagonistic": ["beans", "broad beans", "climbing beans", "bush beans", "peas"]
+  },
+  {
+    "name": "parsley",
+    "companion": ["asparagus", "beans", "chives", "onions", "rosemary", "roses", "tomato"],
+    "antagonistic": ["lettuce"]
+  },
+  {
+    "name": "parsnip",
+    "companion": ["beans", "chives", "coriander", "dill", "corn", "lettuce", "marjoram", "onions", "peas", "potatoes", "radish", "sage", "tomato"],
+    "antagonistic": ["carrots", "celery"]
+  },
+  {
+    "name": "potato",
+    "companion": ["beans", "broad beans", "bush beans", "beets", "broccoli","brussels sprouts","cabbages", "cauliflower", "corn", "marigold", "marjoram", "nasturtium", "peas"],
+    "antagonistic": ["apple", "celery", "cherry", "cucumber"]
+  },
+  {
+    "name": "pumpkin",
+    "companion": ["corn", "marjoram",],
+    "antagonistic": ["potatoes"]
+  },
+  {
+    "name": "radish",
+    "companion": ["climbing beans", "carrots", "cherry", "corn", "cucumber", "lettuce", "marjoram", "nasturtium"],
+    "antagonistic": []
+  },
+  {
+    "name": "raspberry",
+    "companion": ["marigold", "peas", "rue"],
+    "antagonistic": ["potatoes"]
+  },
+  {
+    "name": "rosemary",
+    "companion": ["beans", "cabbages", "garlic", "sage"],
+    "antagonistic": ["potatoes", "tomato"]
+  },
+  {
+    "name": "roses",
+    "companion": ["chives", "marigold", "garlic", "nasturtium", "onions", "parsley", "rue", "sage"],
+    "antagonistic": []
+  },
+  {
+    "name": "rue",
+    "companion": ["carrots", "roses"],
+    "antagonistic": ["basil", "broccoli", "cabbages", "cauliflower", "sage"]
+  },
+  {
+    "name": "sage",
+    "companion": ["beans", "cabbages", "peas", "rosemary", "roses", "strawberry"],
+    "antagonistic": ["cucumber", "rue"]
+  },
+  {
+    "name": "shallots",
+    "companion": ["marjoram", "peas"],
+    "antagonistic": ["beans"]
+  },
+  {
+    "name": "silverbeet",
+    "companion": ["beets", "cherry", "fruit trees", "marjoram", "mulberry", "onions"],
+    "antagonistic": ["basil"]
+  },
+  {
+    "name": "spinach",
+    "companion": ["apple", "apricot", "broad beans", "cherry", "fruit trees", "strawberry"],
+    "antagonistic": []
+  },
+  {
+    "name": "strawberry",
+    "companion": ["bush beans", "borage", "brussels sprouts", "chives", "marigold", "lettuce", "onions", "sage", "spinach"],
+    "antagonistic": ["broccoli", "cabbages", "cauliflower"]
+  },
+  {
+    "name": "sunflower",
+    "companion": ["apricot", "bush beans", "brussel sprouts", "cucumber", "squash"],
+    "antagonistic": ["climbing beans", "garlic", "potatoes"]
+  },
+  {
+    "name": "tansy",
+    "companion": ["apple", "apricot", "borage", "cabbages", "cherry", "cucumber", "fruit trees", "grape vine", "mulberry", "rosemary", "squash", "yarrow"],
+    "antagonistic": []
+  },
+  {
+    "name": "thyme",
+    "companion": ["cabbages", "roses"],
+    "antagonistic": []
+  },
+  {
+    "name": "tomato",
+    "companion": ["asparagus", "basil", "borage", "broccoli", "carrots", "cauliflower", "celery", "chives", "marigold"],
+    "antagonistic": ["apricot", "beets", "fennel"]
+  },
+  {
+    "name": "yarrow",
+    "companion": ["apple", "apricot", "cherry", "fruit trees", "grape vine", "mulberry"],
+    "antagonistic": []
+  },
+  {
+    "name": "zucchini",
+    "companion": ["corn", "marjoram", "nasturtium"],
     "antagonistic": []
   }
 ]

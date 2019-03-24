@@ -1,18 +1,10 @@
-from flask import Flask, jsonify, request
+from services import app
+from flask import Flask, jsonify, render_template, request, redirect, url_for, Response
 from flask_cors import CORS
 from vegetables import VEGETABLES
 from config import trefle_apikey
 import requests
 import json
-
-DEBUG = True
-
-build_path = 'dist'
-
-app = Flask(__name__, static_folder=build_path)
-app.config.from_object(__name__)
-
-CORS(app)
 
 # sanity route check
 @app.route('/ping', methods=['GET'])
@@ -54,7 +46,3 @@ def getplantid():
     url_detail = "https://trefle.io/api/plants/{}?token={}".format(plant_id, trefle_apikey)
     request_detail = requests.get(url_detail)
     return jsonify(json.loads(request_detail.content))
-
-
-if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
